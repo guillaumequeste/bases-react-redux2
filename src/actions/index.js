@@ -3,6 +3,7 @@ import { EAT } from "../constants/action-types";
 import { ROT } from "../constants/action-types";
 import { BG } from "../constants/action-types";
 import { TG } from "../constants/action-types";
+import { ESSAI } from "../constants/action-types";
 
 export const washApple = () => {
   return {
@@ -32,5 +33,11 @@ export const bgApple = () => {
 export const toggle = () => {
   return {
       type: TG
+  };
+}
+
+export const essayer = () => {
+  return {
+      type: ESSAI
   };
 }
