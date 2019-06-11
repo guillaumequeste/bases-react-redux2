@@ -2,6 +2,7 @@ import { WASH } from "../constants/action-types";
 import { EAT } from "../constants/action-types";
 import { ROT } from "../constants/action-types";
 import { BG } from "../constants/action-types";
+import { TG } from "../constants/action-types";
 
 export const washApple = () => {
   return {
@@ -25,5 +26,11 @@ export const rotApple = () => {
 export const bgApple = () => {
   return {
       type: BG
+  };
+}
+
+export const toggle = () => {
+  return {
+      type: TG
   };
 }

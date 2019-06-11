@@ -3,7 +3,8 @@ const initialAppleState = {
     dirty: true,
     remainingBites: 5,
     color: 'red',
-    background: 'white'
+    background: 'white',
+    stateToggle: true
 };
 
 //reducer
@@ -30,6 +31,11 @@ export default (state = initialAppleState, action) => {
         return {
             ...state,
             background: 'blue'
+        }
+        case 'TG':
+        return {
+            ...state,
+            stateToggle: !state.stateToggle
         }
         default:
         return state;
