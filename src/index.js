@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import store from './store';
-import { Provider } from 'react-redux';
-import App from './components/App';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import store from './store'
+import { Provider } from 'react-redux'
+import App from './components/App'
+import API from './components/API'
+import './index.css'
 
 const app = (
     <Provider store={store}>
         <App />
+        <div className="api">
+            <API />
+        </div>
     </Provider>
 )
 
