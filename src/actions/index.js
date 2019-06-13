@@ -36,8 +36,26 @@ export const toggle = () => {
   };
 }
 
+/* action pour laquelle le reducer est dans un autre fichier */
 export const essayer = () => {
   return {
       type: ESSAI
   };
+}
+
+/* actions pour le counter */
+export const incrementCount = count => {
+  const num = count+1
+  return {
+  type: 'INCREMENT_COUNT',
+  count: num
+  }
+}
+
+export const decrementCount = count => {
+  const num = count - 1
+  return {
+    type: 'DECREMENT_COUNT',
+    count: num
+  }
 }

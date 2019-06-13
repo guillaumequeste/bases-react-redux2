@@ -2,9 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import store from './store'
 import { Provider } from 'react-redux'
+
 import App from './components/App'
 import API from './components/API'
 import APIdeux from './components/APIdeux'
+import CounterComponent from './components/CounterComponent'
+
 import './index.css'
 
 const app = (
@@ -18,6 +21,8 @@ const app = (
         <div className="apideux">
             <APIdeux />
         </div>
+        <hr />
+        <CounterComponent />
     </Provider>
 )
 
