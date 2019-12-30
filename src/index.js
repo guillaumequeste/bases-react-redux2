@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import App from './components/App'
 import API from './components/API'
 import APIdeux from './components/APIdeux'
+import APIDico from './components/APIDico'
 import CounterComponent from './components/CounterComponent'
 
 import './index.css'
@@ -23,6 +24,10 @@ const app = (
         </div>
         <hr />
         <CounterComponent />
+        <hr />
+        <div className="apidico">
+            <APIDico />
+        </div>
     </Provider>
 )
 
